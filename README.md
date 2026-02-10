@@ -1,6 +1,6 @@
 # TraceScss
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.7 and node version 22.20.0.
+This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.4 and node version 22.16.0.
 
 ## Development server
 
