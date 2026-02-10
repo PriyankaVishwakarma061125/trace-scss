@@ -1,0 +1,428 @@
+@use 'material';
+@use 'variable';
+@use 'mixins';
+
+//////Font Color/////
+.blue-font-color {
+    color: variable.$relay-blue;
+}
+.blue-dark-font-color {
+    color: variable.$relay-dark-blue;
+}
+.gray-font-color{
+    color: variable.$dark-grey-color !important;
+}
+.green-font-color {
+    color: variable.$relay-green;
+}
+.lightgreen-font-color {
+    color: variable.$relay-light-green;
+}
+.darkgreen-font-color {
+    color: variable.$relay-dark-green;
+}
+.red-font-color {
+    color: variable.$sixth-color;
+}
+.black-font-color {
+    color: variable.$secondary-color;
+}
+.white-font-color{
+    color: variable.$primary-color !important;
+}
+.lightgray-font-color{
+    color: variable.$fourtyseven-color !important;
+}
+.amber-font-color{
+    color: variable.$amber-color !important;
+}
+
+.mediumgray-font-color{
+    color: variable.$fourth-color !important;
+}
+//////Font Size/////
+.fs-11 {
+    font-size: variable.$ft-11;
+}
+.fs-12 {
+    font-size: variable.$ft-12;
+}
+.fs-13 {
+    font-size: variable.$ft-13;
+}
+.fs-14 {
+    font-size: variable.$ft-14;
+}
+.fs-15 {
+    font-size: variable.$ft-15;
+}
+.fs-16 {
+    font-size: variable.$ft-16;
+}
+.fs-18{
+ font-size: variable.$ft-18;   
+}
+.fs-20{
+ font-size: variable.$ft-20;   
+}
+.fs-22{
+ font-size: variable.$ft-22;   
+}
+.fs-23{
+    font-size: variable.$ft-23;
+}
+.fs-9{
+    font-size: variable.$ft-9;
+}
+.fs-8{
+    font-size: variable.$ft-8;
+}
+.fs-10 {
+    font-size: variable.$ft-10;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.bg-color-white{
+    background-color: variable.$primary-color;
+}
+
+.font-medium {
+    font-family: "TraceTextMedium" !important;
+}
+
+.font-regular {
+    font-family: "TraceTextRegular" !important;
+}
+
+.font-light {
+    font-family: "TraceTextLight" !important;
+}
+.font-semi-bold {
+    font-family: "TraceTextSemiBold" !important;
+}
+.font-bold {
+    font-family: "TraceTextBold" !important;
+}
+
+/////////////// Common Scrolbar CSS /////////////////
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8; //#858585
+}
+
+/////////////// All Button Common CSS /////////////////
+.grayButton{
+    button{
+        font-family: "TraceTextMedium";
+        color: rgb(146, 139, 139);
+        font-weight: 100;
+        border: 1px solid rgb(167, 162, 162);
+        width: 88px;
+        font-size: 10px !important;
+        padding: 4px;
+        border-radius: 6px;
+        background-color: transparent;
+    }
+}
+.buttonsContainer {
+    display: flex;
+
+    button {
+        height: 30px;
+        font-family: "TraceTextMedium";
+        color: white;
+        font-weight: 100;
+        border-radius: 6px;
+        min-width: 115px;
+        font-size: 11px;
+        margin-left: 5px;
+        line-height: 0;
+        padding: 8px 10px;
+
+        &:disabled,
+        &[disabled] {
+            cursor: not-allowed;
+        }
+    }
+
+    .channel-btn-border {
+        border: 1px solid #1db100;
+        background-color: #fff;
+        outline: none;
+        height: 34px;
+        width: 98px;
+        border-radius: 6px;
+        img{
+            position: relative;
+            right: 6px;
+        }
+        span {
+            color: #000;
+        }
+    }
+
+    .gray-btn-border {
+        border: 6px solid #c2bcbc;
+        background-color: #fff;
+        outline: none;
+
+        span {
+            color: #999999;
+        }
+    }
+
+    .black-btn-border{
+        background-color: variable.$secondary-color;
+        border-color: transparent;
+    }
+   
+    .red-btn-border {
+        background-color: variable.$relay-red;
+        border-color: transparent;
+    }
+
+
+    .green-button-color {
+        background-color: variable.$relay-green;
+        border-color: transparent;
+    }
+
+    .darkgreen-button-color {
+        background-color: variable.$relay-dark-green;
+        border-color: transparent;
+    }
+
+    .darkgray-button-color {
+        background-color: #d5d5d5;
+        border-color: transparent;
+    }
+
+    .green-button-color:disabled,.blue-button-color:disabled{
+            opacity: 0.3;
+            cursor:default !important;
+    }
+        
+    .blue-button-color {
+        background-color: variable.$relay-blue;
+        border-color: transparent;
+    }
+
+    .red-button-color {
+        background-color: variable.$relay-red ;
+    }
+
+    .grey-button-color {
+        background-color: variable.$fourth-color;
+    }
+
+    .amber-button-color {
+        background-color: variable.$amber-color;
+        border-color: transparent;
+    }
+
+}
+
+
+.buttonsDiv {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+
+
+    .required-warning {
+        color: variable.$sixth-color;
+        font-size: 7px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+    }
+
+    button {
+        height: 30px;
+        font-family: "TraceTextRegular";
+        font-weight:100;
+        color: white;
+        border: none;
+        width: 115px;
+        font-size: 11px;
+        margin-left: 5px;
+
+        span{
+            margin: 0;
+            height: 14px;
+            display: block;
+            }
+
+        &:disabled,
+        &[disabled] {
+            background-color: #d5d5d5;
+            color: white;
+            opacity: 0.3;
+        }
+    }
+
+    .cancelButton {
+        background-color: #929292;
+        // margin-right: 10px;
+        // margin-bottom: 12px;
+    }
+
+    .saveButton {
+        background-color: #1db100;
+
+        // margin-bottom: 10px;
+        // margin-right: 13px;
+        &:disabled {
+            background-color: #1db100;
+                opacity: 0.3;
+                cursor:default !important;
+        }
+    }
+}
+//////////////////// mat-dialog common scss //////////////////////////////
+
+
+.custom-matdailog .mat-dialog-container {
+    padding: 0px;
+}
+
+.manage-custom-matdailog .mat-dialog-container {
+    padding: 0;
+}
+
+.dialog {
+    font-family: 'poppins';
+
+    .dialog-title {
+            height: 35px;
+                position: sticky;
+                top: 15px;
+                z-index: 9999;
+                background: #fff;
+
+        span {
+            color: variable.$relay-green;
+            font-size: 14px;
+            font-weight: 500;
+        }
+    }
+}
+
+///////////////// All Card Common Css ////////////////////
+/*
+.popup-label {
+    font-size: 12px;
+    cursor: pointer;
+    font-family: 'RelayTextThin';
+}
+*/
+.dialog-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #979797;
+    padding: 7px 15px;
+
+    .dialog-heading {
+        span {
+            color: #fff;
+            font-weight: 400;
+            font-size: 14px;
+            font-family: 'TraceTextLight';
+        }
+    }
+}
+
+.dialog-section {
+    padding: 15px 30px;
+}
+
+mat-button-toggle-group {
+    border: none !important;
+    border-radius: 0 !important;
+}
+
+.mat-button-toggle-button .mat-button-toggle-label-content {
+    font-size: 8px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: inherit;
+}
+
+/*** confirmation dialog css **/
+.confirm{
+    padding: 30px 80px;
+
+    .msg{
+        font-family: "TraceTextLight" ;
+        margin-bottom: 10px;
+    }
+}
+
+.error_message{
+    font-size: 10px;
+}
+
+.alert-info {
+    p{
+        font-weight: bolder;
+        color: #5e5e5e;
+        font-size: 10px;
+    }
+}
+.hover-overlay {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    visibility: hidden;
+    transition: visibility 0.2s ease-in-out, background-color 0.3s ease-in-out;
+  }
+  
+  .uploadImgContainer:hover .hover-overlay {
+    visibility: visible;
+  }
+  
+  .uploadImgContainer {
+    margin-right: 1em;
+    margin-left: 20px;
+    margin-top: 1em;
+  }
+
+
+.line-height-9{
+  line-height: .9;
+}
+
+.line-height-1{
+line-height: 1.2;
+}
+
+.error-icon {
+    font-size: 11px;
+    height: 11px !important;
+    width: 11px !important;
+    line-height: 11px;
+}
+
+.ActivePackage {
+    font-family: 'TraceTextLight' !important;
+    @extend .fs-12;
+    @extend .gray-font-color;
+}

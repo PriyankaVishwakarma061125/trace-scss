@@ -3,5 +3,35 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+    "trace-scss": {
+      "projectType": "library",
+      "root": "projects/trace-scss",
+      "sourceRoot": "projects/trace-scss/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular/build:ng-packagr",
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/trace-scss/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/trace-scss/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular/build:karma",
+          "options": {
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
+            "tsConfig": "projects/trace-scss/tsconfig.spec.json"
+          }
+        }
+      }
+    }
   }
 }

@@ -1,0 +1,67 @@
+.red{
+    color: red;
+}
+.green{
+    color: green;
+}
+
+//  mat-tab-css in popup start
+
+::ng-deep.mat_group_css{
+    .mat-mdc-tab.mdc-tab--active .mdc-tab__text-label {
+      color: #1fb100!important;
+      color: #1fb100 !important;
+      letter-spacing: normal;
+      font-family: 'TraceTextRegular';
+    }
+   
+    .mat-mdc-tab.mdc-tab--active:focus{
+      border-color: #1fb100!important;
+      letter-spacing: normal!important;
+      font-family: 'TraceTextRegular'!important;
+    }
+    
+    .mat-mdc-tab .mdc-tab__text-label {
+      color: #b8b5b5!important;
+      letter-spacing: normal!important;
+      font-family: 'TraceTextRegular'!important;
+    }
+    .mat-mdc-tab-group, .mat-mdc-tab-nav-bar {
+      --mdc-tab-indicator-active-indicator-color:#1fb100!important;
+    --mat-tab-header-active-hover-indicator-color: #1fb100!important;
+    --mat-tab-header-inactive-focus-label-text-color: #1fb100!important;
+    --mat-tab-header-inactive-hover-label-text-color: #1fb100!important;
+    --mat-tab-header-active-focus-label-text-color: #1fb100!important;
+    --mat-tab-header-active-hover-label-text-color: #1fb100!important;
+    --mat-tab-header-active-focus-indicator-color: #1fb100!important;
+    --mat-tab-header-active-ripple-color:white!important;
+    --mat-tab-header-inactive-ripple-color:white!important;
+    }
+    .mdc-tab-indicator {
+      display: flex;
+      position: absolute;
+      top: 0;
+      left: 0;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 1;
+    }
+    .mat-mdc-tab-body-wrapper {
+      position: relative;
+      overflow: hidden;
+      border-top: 1px solid #ececec;
+      display: flex;
+      transition: height 500mscubic-bezier(0.35, 0, 0.25, 1);
+  }
+  .mat-mdc-tab-header {
+    --mat-tab-header-label-text-font: Roboto, sans-serif;
+    --mat-tab-header-label-text-size: 15px !important;
+    --mdc-tab-indicator-active-indicator-height: 3px !important; 
+    --mdc-tab-indicator-active-indicator-shape: 0 !important;
+  }
+  
+}
+  //  mat-tab-css in popup end
+  

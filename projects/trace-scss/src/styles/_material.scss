@@ -1,0 +1,346 @@
+::ng-deep #dropdown .drp-content{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: baseline;
+        .mat-form-field.mat-focused .mat-form-field-ripple {
+            background-color: #b5b7b9 !important;
+        }
+    //
+
+    .mat-form-field-subscript-wrapper{
+        margin: 0;
+        top: unset;
+        // bottom: -15px;
+        mat-error{
+            p{
+                margin: 0;
+            }
+        }
+    }
+
+    mat-form-field{
+        width: 100%;
+        // display: grid;
+        align-items: end;
+        padding-left: 10px;
+
+        mat-select{
+            .mat-select-value .mat-select-value-text{
+                font-family: "RelayTextLight" !important;
+                font-weight: 600;
+                font-size: 14px;
+            }
+        }
+    }
+    .mat-form-field-wrapper{
+        padding: 0;
+    }
+    .mat-form-field-underline{
+        bottom: 0 !important;
+        width: 100%;
+    }
+    mat-label{
+      display: inline-block;
+      vertical-align: bottom;
+      font-family: "RelayTextLight";
+      color: #7d7d7d!important;
+      margin: 0;
+      padding-bottom: 4px;
+      flex-shrink: 0;
+    }
+
+    mat-form-field input{
+      font-family: "RelayTextLight" !important;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    .mat-form-field-infix{
+      border: none;
+      padding: 4px 5px;
+    }
+}
+
+::ng-deep #input .input-content{
+margin-bottom: 20px;
+display: flex;
+align-items: baseline;
+    .mat-form-field.mat-focused .mat-form-field-ripple {
+        background-color: #b5b7b9 !important;
+    }
+
+.mat-form-field-subscript-wrapper{
+    margin: 0;
+    top: unset;
+    mat-error{
+        p{
+            margin: 0;
+        }
+    }
+}
+
+mat-form-field{
+    width: 100%;
+    display: grid;
+    align-items: end;
+    padding-left: 10px;
+
+}
+
+.mat-form-field-wrapper{
+    padding: 0;
+}
+.mat-form-field-underline{
+    bottom: 0 !important;
+    width: 100%;
+}
+mat-label{
+    display: inline-block;
+    vertical-align: bottom;
+    font-family: "RelayTextLight";
+    color: #7d7d7d!important;
+    margin: 0;
+    padding-bottom: 4px;
+    flex-shrink: 0;
+}
+
+mat-form-field input{
+    font-family: "RelayTextLight" !important;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.mat-form-field-infix{
+    border: none;
+    padding: 4px 5px;
+}
+
+}
+
+::ng-deep #datepicker .datepicker-content{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+        .mat-form-field.mat-focused .mat-form-field-ripple {
+            background-color: #b5b7b9 !important;
+        }
+
+    .mat-form-field-subscript-wrapper{
+        margin: 0;
+        top: unset;
+        mat-error{
+            p{
+                margin: 0;
+            }
+        }
+    }
+
+    mat-form-field{
+        width: 100%;
+        display: grid;
+        align-items: end;
+        padding-left: 10px;
+    }
+
+    .mat-form-field-wrapper{
+        padding: 0;
+    }
+    .mat-form-field-underline{
+        bottom: 0 !important;
+        width: 100%;
+    }
+    mat-label{
+      display: inline-block;
+      vertical-align: bottom;
+      font-family: "RelayTextLight";
+      font-size: 15px;
+      color: #7d7d7d!important;
+      margin: 0;
+      padding-bottom: 4px;
+      flex-shrink: 0;
+    }
+
+    mat-form-field input{
+      font-family: "RelayTextLight" !important;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    .mat-form-field-infix{
+      border: none;
+      padding: 2px 5px;
+    }
+
+    .dateInput{
+        position: relative;
+        height: 23px;
+    }
+
+    .dateLabel{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 22px;
+        background: #fff;
+        width: 90%;
+        padding-left: 5px;
+        align-items: flex-end;
+        display: flex;
+    }
+}
+
+::ng-deep #textarea .textarea-content{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: self-start;
+        .mat-form-field.mat-focused .mat-form-field-ripple {
+            background-color: #b5b7b9 !important;
+        }
+
+        .textarea-input{
+            .mat-form-field-underline{
+                display: none
+            }
+            .mat-form-field-infix{
+                padding: 0;
+            }
+            textarea{
+                border: 1px solid #cccccc;
+                font-family: "RelayTextLight" !important;
+                font-weight: 600;
+                font-size: 14px;
+                width: 97%;
+                padding: 5px 0px 0px 9px !important;
+            }
+        }
+
+    .mat-form-field-subscript-wrapper{
+        margin: 0;
+        top: unset;
+        // bottom: -15px;
+        mat-error{
+            p{
+                margin: 0;
+            }
+        }
+    }
+
+    mat-form-field{
+        width: 100%;
+        display: grid;
+        align-items: end;
+        padding-left: 10px;
+    }
+
+    .mat-form-field-wrapper{
+        padding: 0;
+    }
+    .mat-form-field-underline{
+        bottom: 0 !important;
+        width: 100%;
+    }
+    mat-label{
+      display: inline-block;
+      vertical-align: bottom;
+      font-family: "RelayTextLight";
+      color: #7d7d7d!important;
+      margin: 0;
+      padding-bottom: 4px;
+      flex-shrink: 0;
+    }
+
+    mat-form-field input{
+      font-family: "RelayTextLight" !important;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    .mat-form-field-infix{
+      border: none;
+      padding: 4px 5px;
+    }
+}
+
+::ng-deep #radio .radio-content{
+    margin-bottom: 20px;
+    display: flex;
+        .mat-form-field.mat-focused .mat-form-field-ripple {
+            background-color: #b5b7b9 !important;
+        }
+
+    .mat-form-field-subscript-wrapper{
+        margin: 0;
+        top: unset;
+        mat-error{
+            p{
+                margin: 0;
+            }
+        }
+    }
+
+    mat-radio-group{
+        padding-left: 10px;
+        mat-radio-button{
+            .mat-radio-label-content{
+                font-family: 'RelayTextLight';
+                font-size: 14px;
+                padding-left: 0;
+                // color: #000;
+                font-weight: 600;
+                // letter-spacing: .5px;
+            }
+        }
+    }
+
+    .mat-radio-outer-circle {
+        height: 11px;
+        width: 11px;
+        left: 4px;
+        top: 4px;
+        border-color: #2b2b2a;
+        border: 1px solid black;
+
+    }
+
+    .mat-radio-button{
+        label{
+            margin-right: 13px;
+        }
+    }
+
+    .mat-accent .mat-radio-inner-circle {
+        background-color: #2b2b2a !important;
+        width: 11px;
+        height: 11px;
+        position: relative;
+        top: 4px;
+        left: 4px;
+    }
+
+    .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
+        // border-color: #2b2b2a !important;
+        border: 1px solid black;
+
+    }
+
+    .mat-form-field-wrapper{
+        padding: 0;
+    }
+    .mat-form-field-underline{
+        bottom: 0 !important;
+        width: 100%;
+    }
+
+    mat-label{
+      display: inline-block;
+      vertical-align: bottom;
+      margin: 0;
+      padding-bottom: 4px;
+      flex-shrink: 0;
+      color: #7d7d7d!important;
+      font-family: 'RelayTextLight';
+    //   font-weight: 600;
+    //   letter-spacing: .7px;
+    //   width: 30%;
+    }
+}
